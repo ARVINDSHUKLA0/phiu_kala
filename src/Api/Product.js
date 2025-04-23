@@ -1,11 +1,17 @@
-import img1 from '/assets/img/one.avif'
+import img1 from '/assets/img/one.jpg'
 import img2 from '/assets/img/two.jpg'
-import img3 from '/assets/img/three.webp'
-import img4 from '/assets/img/four.avif'
-import img5 from '/assets/img/five.webp'
-import img6 from '/assets/img/six.webp'
+import img3 from '/assets/img/three.jpg'
+import img4 from '/assets/img/four.jpg'
+import img5 from '/assets/img/five.jpg'
+import img6 from '/assets/img/six.jpg'
 import img7 from '/assets/img/seven.jpg'
 import img8 from '/assets/img/eight.jpg'
+import img9 from '/assets/img/nine.jpg'
+import img10 from '/assets/img/ten.jpg'
+import img11 from '/assets/img/11.jpg'
+import img12 from '/assets/img/12.png'
+
+
 const Product = [
     { id : 1, name: 'arvind', thumbnailImage : img1, imges : img1, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 700, size : "27 x 17 x 8 cm ",createdAt: '2024-08-12',gender: 'male', popularity: 70},
     { id : 2, name: 'arvind', thumbnailImage : img2, imges : img2, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 300, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-17',gender: 'female', popularity: 100},
@@ -15,6 +21,10 @@ const Product = [
     { id : 6, name: 'arvind', thumbnailImage : img6, imges : img6, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 320, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-27',gender: 'female', popularity: 20},
     { id : 7, name: 'arvind', thumbnailImage : img7, imges : img7, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 110, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-28',gender: 'female', popularity: 170 },
     { id : 8, name: 'arvind', thumbnailImage : img8, imges : img8, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 180, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-30',gender: 'male', popularity: 390},
+    { id : 9, name: 'arvind', thumbnailImage : img9, imges : img9, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 180, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-30',gender: 'male', popularity: 390},
+    { id : 10, name: 'arvind', thumbnailImage : img10, imges : img10, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 180, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-30',gender: 'male', popularity: 390},
+    { id : 11, name: 'arvind', thumbnailImage : img11, imges : img11, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 180, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-30',gender: 'male', popularity: 390},
+    { id : 12, name: 'arvind', thumbnailImage : img12, imges : img12, title : "Lattafa Khamrah Eau De Parfum 100ml", description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatui.", price : 180, size : "27 x 17 x 8 cm" ,createdAt: '2024-08-30',gender: 'male', popularity: 390},
 ]
 
 export default Product

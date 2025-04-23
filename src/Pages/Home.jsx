@@ -81,35 +81,37 @@ const Home = () => {
           </div>
 
           <div className='px-2'>
-            <div className="row">
+            <div className="row text-center">
               {
                 Product.map((itemValue, index) => (
                   <div className='col-lg-3 col-md-4 col-sm-6 col-6 product-item text-center cursor-pointer ' key={index}>
-
-                    <div className="position-relative overflow-hidden ">
+                    <div className='bg-light mb-3 mx-2 rounded-3'>
+                    <div className="position-relative overflow-hidden">
+                      <div className='cutom-limit-height px-2'>
                       <Link to={`/productbuy/${itemValue.id}`} className='text-decoration-none'>
-                        <img className='img-fluid' src={itemValue.thumbnailImage} width={235} alt="Image" />
+                        <img className='img-fluid' src={itemValue.thumbnailImage}  alt="Image" />
                       </Link>
+                      </div>
                       <div
                         className="position-absolute product-wrapper d-flex align-items-center justify-content-center ">
                         <span className="d-flex align-items-center h-100 ">
-                          <p className="bg-dark text-white  mb-0  h-100 px-3 pt-1  text-uppercase fs-small">Quick Look</p>
+                          <p className=" main-bg-color text-white  mb-0  h-100 px-3 pt-1  text-uppercase fs-small">Quick Look</p>
                           <Link onClick={() => WislistFunc(itemValue.id)} >
-                            <i className="fa-regular fa-heart h-100 custom-padding-icon-heart  bg-secondary text-white fs-mediam-font-size "></i>
+                            <i className="fa-regular fa-heart h-100 custom-padding-icon-heart bg-dark text-white fs-mediam-font-size "></i>
                           </Link>
                         </span>
                       </div>
                     </div>
 
                     <div className="">
-                      <p className="mb-2 text-uppercase text-dark mt-3 custom-font-size-and-weight px-2 fw-bold">basket with handles Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                      <p className="mb-2 text-uppercase text-dark mt-3 custom-font-size-and-weight px-2 fw-bold">basket with handles Lorem </p>
                       <div className="product-btn-price w-100 position-relative overflow-x-hidden ">
                         <div className="position-absolute top-0 w-100 text-center product-add-cart"><button onClick={() => addToCartFunc(itemValue.id)}
                           className=" border-0 text-uppercase btn-content bg-white custom-font-size-and-weight">add to cart</button></div>
                         <div className="w-100  text-center position-absolute top-0 product-price custom-font-size-and-weight text-dark"> &#x20B9; {itemValue.price}</div>
                       </div>
                     </div>
-
+                    </div>
                   </div>
                 ))
               }
@@ -118,7 +120,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className='custom-k'>
         <img className='w-100' src={timelessImage} alt="Image" />
       </section>
 
@@ -130,7 +132,7 @@ const Home = () => {
               <p className="newslatter-custom-style m-0 ps-2">NEWSLETTER</p>
             </div>
             <div className="col-md-8 col-12 px-2">
-              <div className="border border-dark rounded-pill d-flex justify-content-between gap-2 ps-3">
+              <div className="border  border-secondary rounded-pill d-flex justify-content-between gap-2 ps-3">
                 <input type="text" name="your email" id="" className="flex-grow-1 d-block border-0 bg-transparent newsletter-input" placeholder="Enter Email" />
                 <span className="newslatetr-sumbit-btn   rounded-pill mb-0 text-white px-4 py-2">Submit</span>
               </div>

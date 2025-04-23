@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const HeaderSlider = () => {
   const settings = {
-    autoplay: false,
+    autoplay: true,
     dots: false,
     infinite: true,
     speed: 1000,
@@ -16,7 +16,7 @@ const HeaderSlider = () => {
     pauseOnFocus: false,
   };
 
-  const imgArr = ["slider1.jpeg", "slider2.jpeg", "slider3.jpeg"];
+  const imgArr = ["slider1.jpg", "slider2.webp", "slider3.jpg"];
 
   return (
     <section className='slider-header-wrap'>
@@ -25,7 +25,7 @@ const HeaderSlider = () => {
           <div className='header-slider' key={i}>
             <img
               src={`/assets/img/${img}`}
-              alt='dooziedo'
+              alt='phiu-kala'
               loading='lazy'
               className='baner-img'
             />

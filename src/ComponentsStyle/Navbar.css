@@ -1,5 +1,5 @@
  .custom-font-size {
-     font-size: 12px;
+     font-size: 14px;
  }
  
  .cutom-color{
@@ -16,7 +16,9 @@
  }
 
  .custom-width {
-     width: 180px !important;
+     width: 70px !important;
+     object-fit: cover;
+    
  }
 
  .navbar-main-display {
@@ -39,17 +41,36 @@
  .drop-dwon {
      position: absolute;
      background-color: white;
-     top: 51px;
+     top: 86px;
      z-index: 99;
      width: 100%;
      height: auto;
      left: 0px;
      display: none;
      padding: 30px !important;
+     box-shadow: 10px 0px 40px 1px gray;
 
 
  }
+  
+ .drop-dwon-min {
+    position: absolute;
+    background-color: white;
+    top: 53px;
+    width: 100px !important;
+    z-index: 9;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    border-radius: 15px;
+    display: none;
+    padding: 30px !important;
+    box-shadow: 10px 0px 40px 1px gray;
+ }
 
+ .list-item:hover .drop-dwon-min{
+    display: block;
+ }
  .list-item:hover .drop-dwon {
 
      display: block;
@@ -173,7 +194,28 @@
          padding: 0 !important;
          transition: height 0.3s ease;
      }
+     .drop-dwon-min{
+        position: relative;
+        background-color: #212529;
+        top: 0;
+        z-index: 99;
+        width: 100% !important;
+        height: 0;
+        left: 0;
+        display: block;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0 !important;
+        transition: height 0.3s ease;
+     }
 
+     .drop-dwon-min.dropToggleMenu{
+        height: 35vh;
+        padding: 10px 0 !important;
+        background-color: #212529;
+        overflow: scroll;
+        scrollbar-width: none;
+     }
      .drop-dwon.dropToggleMenu {
          height: 35vh;
          padding: 10px 0 !important;
@@ -267,7 +309,7 @@
      }
 
      .custom-width {
-         width: 230px !important;
+         width: 100px !important;
      }
 
      .icon-size {
@@ -279,6 +321,9 @@
      .custom-font-size {
          font-size: 15px;
      }
+     .custom-width {
+        width: 100px !important;
+    }
 
      .sm-postion {
          position: absolute;
@@ -295,7 +340,8 @@
 
      .sm-postion.menuOpen {
          left: 0;
-
+ 
+         
      }
 
      .drop-dwon {
@@ -319,10 +365,7 @@
 
      }
 
-     .custom-width {
-         width: 270px !important;
-     }
-
+      
      .list-display-menu {
          display: block;
      }
