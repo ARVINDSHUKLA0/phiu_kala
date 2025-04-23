@@ -1,7 +1,7 @@
 import React from 'react'
 import '../PagesStyle/About.css'
 import Navbar from '../Components/Navbar' 
-import AboutOneimg from '/assets/img/five.webp'
+import AboutOneimg from '/assets/img/five.jpg'
 import AboutTwoimg from '/assets/img/seven.jpg'
 import AboutProfileOne from '/assets/img/AboutProfileOne.webp'
 import Footer from '../Components/Footer'
