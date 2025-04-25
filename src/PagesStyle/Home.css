@@ -62,8 +62,7 @@
     justify-content: center;
 }
 
-.product-wrapper {
-    bottom: -40px;
+.product-wrapper { 
     position: absolute;
     height: 27px;
     text-align: center;
