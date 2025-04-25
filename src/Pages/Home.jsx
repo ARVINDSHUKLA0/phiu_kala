@@ -94,10 +94,10 @@ const Home = () => {
                       </div>
                       <div
                         className="position-absolute product-wrapper d-flex align-items-center justify-content-center ">
-                        <span className="d-flex align-items-center h-100 ">
-                          <p className=" main-bg-color text-white  mb-0  h-100 px-3 pt-1  text-uppercase fs-small">Quick Look</p>
+                        <span className="d-flex align-items-center h-100">
+                          <h2 className=" main-bg-color text-white  mb-0 rounded-2 h-100 px-lg-3 px-2  pt-1  text-uppercase fs-small">Quick Look</h2>
                           <Link onClick={() => WislistFunc(itemValue.id)} >
-                            <i className="fa-regular fa-heart h-100 custom-padding-icon-heart bg-dark text-white fs-mediam-font-size "></i>
+                            <i className="fa-regular fa-heart h-100 custom-padding-icon-heart bg-dark text-white fs-mediam-font-size rounded-2 "></i>
                           </Link>
                         </span>
                       </div>
@@ -114,6 +114,7 @@ const Home = () => {
                     </div>
                   </div>
                 ))
+              
               }
             </div>
           </div>
