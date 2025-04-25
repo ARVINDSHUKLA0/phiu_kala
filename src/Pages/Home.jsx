@@ -84,9 +84,9 @@ const Home = () => {
             <div className="row text-center">
               {
                 Product.map((itemValue, index) => (
-                  <div className='col-lg-3 col-md-4 col-sm-6 col-6 product-item text-center cursor-pointer ' key={index}>
+                  <div className='col-lg-3 col-md-4 col-sm-6 col-6 product-item text-center overflow-hidden cursor-pointer ' key={index}>
                     <div className='bg-light mb-3 mx-2 rounded-5'>
-                    <div className="position-relative overflow-hidden">
+                    <div className="position-relative overflow-hidden ">
                       <div className='cutom-limit-height px-2'>
                       <Link to={`/productbuy/${itemValue.id}`} className='text-decoration-none'>
                         <img className='img-fluid' src={itemValue.thumbnailImage}  alt="Image" />
@@ -95,7 +95,7 @@ const Home = () => {
                       <div
                         className="position-absolute product-wrapper d-flex align-items-center justify-content-center ">
                         <span className="d-flex align-items-center h-100">
-                          <h2 className=" main-bg-color text-white  mb-0 rounded-2 h-100 px-lg-3 px-2  pt-1  text-uppercase fs-small">Quick Look</h2>
+                          <h3 className=" main-bg-color text-white  mb-0 rounded-2 h-100 px-lg-3 px-2  pt-1  text-uppercase fs-small">Quick Look</h3>
                           <Link onClick={() => WislistFunc(itemValue.id)} >
                             <i className="fa-regular fa-heart h-100 custom-padding-icon-heart bg-dark text-white fs-mediam-font-size rounded-2 "></i>
                           </Link>
@@ -103,7 +103,7 @@ const Home = () => {
                       </div>
                     </div>
 
-                    <div className="">
+                    <div className="item-product-menu">
                       <p className="mb-2 text-uppercase text-dark mt-3 custom-font-size-and-weight px-2 fw-bold">basket with handles Lorem </p>
                       <div className="product-btn-price w-100 position-relative overflow-x-hidden ">
                         <div className="position-absolute top-0 w-100 text-center product-add-cart"><button onClick={() => addToCartFunc(itemValue.id)}

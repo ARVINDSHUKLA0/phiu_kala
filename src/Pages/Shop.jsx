@@ -194,7 +194,7 @@ const Shop = () => {
                                         </div>
                                       </div>
                   
-                                      <div className="">
+                                      <div className="item-product-menu">
                                         <p className="mb-2 text-uppercase text-dark mt-3 custom-font-size-and-weight px-2 fw-bold">basket with handles Lorem </p>
                                         <div className="product-btn-price w-100 position-relative overflow-x-hidden ">
                                           <div className="position-absolute top-0 w-100 text-center product-add-cart"><button onClick={() => addToCartFunc(itemValue.id)}

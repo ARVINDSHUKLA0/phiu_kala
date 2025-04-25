@@ -63,14 +63,17 @@
 }
 
 .product-wrapper {
-    bottom: -100%;
+    bottom: -40px;
     position: absolute;
-    height: 26px;
+    height: 27px;
     text-align: center;
-    width: 100%;  
-    transition: .3s;
+    width: 100%;   
+    z-index: 8;
 }
 
+.item-product-menu{
+    z-index: -7;
+}
 .product-item:hover .product-add-cart {
     left: 0%;
 }
