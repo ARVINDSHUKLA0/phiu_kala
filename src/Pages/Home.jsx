@@ -85,7 +85,7 @@ const Home = () => {
               {
                 Product.map((itemValue, index) => (
                   <div className='col-lg-3 col-md-4 col-sm-6 col-6 product-item text-center cursor-pointer ' key={index}>
-                    <div className='bg-light mb-3 mx-2 rounded-3'>
+                    <div className='bg-light mb-3 mx-2 rounded-5'>
                     <div className="position-relative overflow-hidden">
                       <div className='cutom-limit-height px-2'>
                       <Link to={`/productbuy/${itemValue.id}`} className='text-decoration-none'>
