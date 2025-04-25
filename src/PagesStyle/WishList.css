@@ -1,44 +1,70 @@
-.wishlist-remove-postion{
+.wishlist-remove-postion {
     position: absolute;
     top: 10px;
     right: 25px;
 }
- 
- .wishlist-not-data-showing{
-    height: 60%;
- }
- .wishlist-conatiner{
+
+.wishlist-not-data-showing {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
-    align-items: center;
- }
-.custom-font-degin{
+
+}
+
+.custom-font-degin {
     font-style: italic;
 }
- 
- 
+
+
+.wishlist-min-height {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.wishlist-min-height img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 @media (min-width: 0px) and (max-width: 525px) {
-    .custom-width-btn{
+    .custom-width-btn {
         width: 75%;
     }
-    .custom-padding-sm{
-        padding-left: 40px !important;
+
+    .wishlist-min-height {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .wishlist-remove-postion{
+        position: absolute;
+        top: 10px;
+        right: 25px;
     }
 }
+
 @media (min-width: 526px) and (max-width: 768px) {
-    .custom-width-btn{
+    .custom-width-btn {
         width: 50%;
     }
-    .custom-padding-sm{
-        padding-left: 40px !important;
+
+    .wishlist-min-height {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
+
 @media (min-width: 769px) and (max-width: 1440px) {
-    .custom-width-btn{
+    .custom-width-btn {
         width: 25%;
+    }
+    .wishlist-min-height {
+        height: 350px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }

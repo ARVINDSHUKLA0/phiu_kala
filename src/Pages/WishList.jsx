@@ -12,10 +12,11 @@ const WishList = () => {
     <>
       <Navbar />
       <section className='my-4 wishlist-conatiner'>
-        <div className="row align-items-center m-0">
+        <div className="row m-0">
           {
             dataWislist.length === 0 ? (
-              <div className='my-100 text-center wishlist-not-data-showing'>
+              < div className='wishlist-not-data-showing'>
+              <div className='my-100 text-center '>
                 <h3 className='text-danger custom-font-degin'>Noting found in wishlist</h3>
                 <Link to="/shop" className='text-decoration-none text-white'>
                   <button className='btn-normal custom-width-btn w-100 my-3 text-capitalize '>
@@ -24,16 +25,19 @@ const WishList = () => {
                 </Link>
 
               </div>
+              </ div>
             ) : (
               dataWislist.map((wishListdata, index) => (
                 <div key={index} className='col-lg-3 col-md-4 col-sm-6 col-12'>
-                  <div className='wishlist-min-height'>
+                  <div className=''>
                     <div className='position-relative px-2 py-2'>
+                      <div className='wishlist-min-height'>
                       <img className='img-fluid' src={wishListdata.thumbnailImage} alt="" />
+                      </div>
                       <h6 className='m-0 text-wrap py-2 custom-padding-sm'>{wishListdata.title}</h6>
                       <p className='fs-small custom-padding-sm'> &#x20B9; {wishListdata.price}</p>
                       <div className='wishlist-remove-postion'>
-                        <Link onClick={() => RemoveWishListfunc(wishListdata.id)}><i className="fa-solid fa-xmark text-dark fs-5 text-muted"></i></Link>
+                        <Link onClick={() => RemoveWishListfunc(wishListdata.id)}><i className="fa-solid fa-xmark text-dark fs-5 text-dark mt-2"></i></Link>
                       </div>
                     </div>
                   </div>
