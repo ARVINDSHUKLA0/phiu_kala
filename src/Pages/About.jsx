@@ -3,7 +3,7 @@ import '../PagesStyle/About.css'
 import Navbar from '../Components/Navbar' 
 import AboutOneimg from '/assets/img/five.jpg'
 import AboutTwoimg from '/assets/img/seven.jpg'
-import AboutProfileOne from '/assets/img/AboutProfileOne.webp'
+import AboutProfileOne from '/assets/img/five.jpg'
 import Footer from '../Components/Footer'
 
 const About = () => {
