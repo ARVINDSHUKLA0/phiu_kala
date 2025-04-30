@@ -78,54 +78,6 @@ const Home = () => {
 
       <section>
         <div className="container mb-3 overflow-hidden ">
-          <div className="d-flex align-items-center justify-contant-between  mb-5 mt-5">
-            <div className="position-relative flex-grow-1">
-              <span className="d-lg-none d-block cursor-pointer">
-                <span
-                  className="text-dark text-uppercase main-font-weight fs-small"
-                  onClick={categoryShow}
-                >
-                  Category <i className="fa-solid fa-caret-up text-dark"></i>
-                </span>
-              </span>
-              <div
-                className={`categoryWrap mt-3 ${categoryProduct ? "open" : ""}`}
-
-              >
-                <ul className="d-lg-flex py-4 d-block gap-4 p-0">
-                  <li className="text-uppercase d-lg-block d-none main-font-weight list-icon-none fs-mediam-font-size">
-                    all
-                  </li>
-                  <li className="text-uppercase text-color-cetegory list-icon-none fs-mediam-font-size">
-                    men
-                  </li>
-                  <li className="text-uppercase text-color-cetegory list-icon-none fs-mediam-font-size">
-                    women
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className='position-relative'>
-              <ul className='m-0'>
-                <li className='text-uppercase main-font-size main-font-weight list-icon-none fs-mediam-font-size cursor-pointer' onClick={filterShow}>
-                  filter
-                  <i className="fa-solid fa-caret-down px-2"></i>
-                  <div className={`filter-dropdown  ${filterPrice ? "open" : ""}`}>
-                    <ul className='p-4'>
-                      <li className='py-1 list-icon-none fs-small text-white'>price range</li>
-                      <li className='py-1 list-icon-none fs-small text-white'>all</li>
-                      <li className='py-1 list-icon-none fs-small text-white'>$0-$10</li>
-                      <li className='py-1 list-icon-none fs-small text-white'>$10-$20</li>
-                      <li className='py-1 list-icon-none fs-small text-white'>$20-$30</li>
-                      <li className='py-1 list-icon-none fs-small text-white'>$30-$40</li>
-                      <li className='py-1 list-icon-none fs-small text-white'>$40+</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
           <div className='px-2'>
             <div className="row text-center">
               {
