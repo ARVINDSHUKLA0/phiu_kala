@@ -12,19 +12,19 @@ import { Link } from 'react-router-dom';
 const imagesArr = [
     {
         CetegorySrc: CetegoryOne,
-        toysName: "Plush Animals",
+        toysName: "clock",
     },
     {
         CetegorySrc: CetegoryTwo,
-        toysName: "Plush Animals",
+        toysName: "earrings",
     },
     {
         CetegorySrc: CetegoryThree,
-        toysName: "Plush Animals",
+        toysName: "name plate",
     },
     {
         CetegorySrc: CetegoryFour,
-        toysName: "Plush Animals",
+        toysName: "Photo frame",
     }
 ];
 
@@ -79,7 +79,7 @@ const Category = () => {
                                             <div className='categoryimg-border'>
                                                 <img className=' img-cetgery-padding custom-width-img ' src={ValueData.CetegorySrc} alt="" />
                                             </div>
-                                            <p className='text-center text-dark mt-4 text-font-famliy fs-3'>{ValueData.toysName}</p>
+                                            <p className='text-center text-dark mt-4 text-font-famliy fs-3 text-capitalize'>{ValueData.toysName}</p>
                                         </div>
                                     </div>
                                 </Link>
