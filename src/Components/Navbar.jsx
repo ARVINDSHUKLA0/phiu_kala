@@ -105,44 +105,44 @@ const Navbar = () => {
                                 <div className={`drop-dwon ${(dropName === 'shop') ? 'dropToggleMenu' : ''}`}>
 
                                     <ul className=' d-lg-flex d-block justify-content-between'>
-                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >shop types
-                                            <ul className='mt-3'>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
+                                        <li className=' menu-font-size text-capitalize custom-font-weight list-icon-none'>shop types
+                                            <ul className='mt-lg-3 mt-1' style={{fontFamily : 'monospace'}}>
+                                                <li className='py-1 list-icon-none  custom-font-size custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
-                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >product types
-                                            <ul className='mt-3'>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
+                                        <li className='menu-font-size text-capitalize custom-font-weight list-icon-none'>product types
+                                            <ul className='mt-lg-3 mt-1'   style={{fontFamily : 'monospace'}} >
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
-                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >feature
-                                            <ul className='mt-3'>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
+                                        <li className='menu-font-size text-capitalize custom-font-weight list-icon-none'>feature
+                                            <ul className='mt-lg-3 mt-1' style={{fontFamily : 'monospace'}}>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
-                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >layouts
-                                            <ul className='mt-3'>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
-                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
+                                        <li className='menu-font-size text-capitalize custom-font-weight list-icon-none' >layouts
+                                            <ul className='mt-lg-3 mt-1' style={{fontFamily : 'monospace'}}>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none custom-font-size custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
                                     </ul>

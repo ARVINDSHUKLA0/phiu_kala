@@ -4,6 +4,19 @@
   box-sizing: border-box;
 
 }
+/* src/assets/fonts/font.css */
+
+@font-face {
+  font-family: 'Really Better';
+  src: url('../public/assets/font/really-better/Really\ Better.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ 
+.text-font-famliy{
+  font-family: 'Really Better', sans-serif;;
+}
 .my-100{
  margin-top: 100px;
  margin-bottom: 100px;

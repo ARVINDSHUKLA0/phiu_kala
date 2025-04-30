@@ -2,6 +2,10 @@
      font-size: 14px;
  }
  
+ .menu-font-size{
+    font-size: 24px;
+    font-family: 'Caveat', sans-serif;
+ }
  .cutom-color{
     color: black;
  }
@@ -157,6 +161,9 @@
      .custom-font-size {
          font-size: 11px;
      }
+     .menu-font-size{
+        font-size: 14px;
+     }
 
      .sm-postion {
          position: fixed;
@@ -255,6 +262,9 @@
          font-size: 12px;
      }
 
+     .menu-font-size{
+        font-size: 15px;
+     }
      .sm-postion {
          position: absolute;
          top: 62px;
@@ -322,6 +332,9 @@
  @media (min-width: 769px) and (max-width:1024px) {
      .custom-font-size {
          font-size: 15px;
+     }
+     .menu-font-size{
+        font-size: 15px;
      }
      .custom-width {
         width: 100px !important;

@@ -22,7 +22,9 @@ import Privacypolicy from './Pages/Privacypolicy';
 import TermsConditions from './Pages/TermsConditions';
 import Cancellations from './Pages/Cancellations';
 import Shop from './Pages/Shop';
- 
+  
+import "@fontsource/caveat";  
+
 
 function App() {
   const [count, setCount] = useState(0)

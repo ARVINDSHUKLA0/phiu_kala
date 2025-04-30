@@ -8,6 +8,10 @@ import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import { AddtoCartWarpper } from '../Context/AddToCartContext'
 import { WisListdata } from '../Context/WislistContext'
+import CetgorySilder from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Category from './Category'
 
 const Home = () => {
   const { addToCartFunc } = useContext(AddtoCartWarpper)
@@ -24,11 +28,53 @@ const Home = () => {
   }
 
 
+  const Cetsettings = {
+    autoplay: true,
+    dots: false,
+    infinite: true,
+    speed: 1500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+        }
+      }
+    ]
+  };
+
+
 
   return (
     <>
       <Navbar />
       <HeaderSlider />
+
+      <Category/>
+
 
       <section>
         <div className="container mb-3 overflow-hidden ">
