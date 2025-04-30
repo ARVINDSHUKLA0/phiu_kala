@@ -29,7 +29,7 @@ const imagesArr = [
 ];
 
 const mainSliderSettings = {
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     dots: false,
     infinite: true,
