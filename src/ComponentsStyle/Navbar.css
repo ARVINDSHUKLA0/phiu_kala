@@ -127,11 +127,6 @@
  .icon-menu-list {
      display: flex;
  }
-
- /* .bars-icon-display {
-     display: none;
- } */
-
  .dropdwon-profile-navabar {
      position: absolute;
      top: 102%;  
@@ -193,6 +188,7 @@
          overflow: hidden;
          padding: 0 !important;
          transition: height 0.3s ease;
+         box-shadow: none;
      }
      .drop-dwon-min{
         position: relative;
@@ -207,20 +203,23 @@
         overflow: hidden;
         padding: 0 !important;
         transition: height 0.3s ease;
+        box-shadow: none !important;
      }
 
      .drop-dwon-min.dropToggleMenu{
-        height: 35vh;
+        height: 30vh;
         padding: 10px 0 !important;
         background-color: #212529;
         overflow: scroll;
         scrollbar-width: none;
+        box-shadow: none !important;
      }
      .drop-dwon.dropToggleMenu {
-         height: 35vh;
+         height: 30vh;
          padding: 10px 0 !important;
          background-color: #212529;
          overflow: scroll;
+         box-shadow: none !important;
          scrollbar-width: none;
      }
 
@@ -244,6 +243,9 @@
      }
      .item-sm-py{
         padding: 15px 0px !important;
+     }
+     .custom-color{
+       color: white !important;
      }
 
  }

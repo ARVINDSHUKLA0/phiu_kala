@@ -27,10 +27,10 @@ const CartView = () => {
                             cartItems.map((CartViewValue, index) => (
                                 <div className='d-sm-flex d-block justify-content-between border-bottom mb-4'>
                                     <div className='d-flex '>
-                                        <div className='mb-3'>
-                                            <img className='img-fulid' src={CartViewValue.thumbnailImage} width={110} alt="" />
+                                        <div className='mb-3 cartview-imges'>
+                                            <img className='img-fulid' src={CartViewValue.thumbnailImage} alt="" />
                                         </div>
-                                        <div>
+                                        <div className='ps-lg-3 ps-2'>
                                             <p className='fw-bold m-0 fs-small text-uppercase'>{CartViewValue.title}</p>
                                             <p className='m-0 fs-small '> &#x20B9; {CartViewValue.price}</p>
                                             <p className='m-0 fs-small text-capitalize'>meterial : scent</p>

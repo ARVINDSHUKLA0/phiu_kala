@@ -97,104 +97,70 @@ const Navbar = () => {
 
                             <li className='list-item cursor-pointer list-icon-none pt-1 item-sm-py  custom-font-size  text-capitalize custom-font-weight'>
                                 <Link to="/" className='cutom-color text-decoration-none py-4'>home</Link>
-                              
-                            </li>
-                            <li className='list-item cursor-pointer list-icon-none pt-1 item-sm-py  custom-font-size  text-capitalize custom-font-weight'>
-                                <Link to="/shop" className='cutom-color text-decoration-none py-4'>shop</Link>
                             </li>
 
-                          
-                            <li onClick={() => toggleDropdownMenu("gifting")} className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
-                                <Link className=' cutom-color text-decoration-none py-5'>gifting</Link>
-                                <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'gifting' && listIcon ? 'listIconrotated' : ''}`}></i>
-                                <div className={`drop-dwon ${(dropName === 'gifting') ? 'dropToggleMenu' : ''}`}>
-                                    <ul className='d-sm-flex d-block justify-content-between box'>
-                                        <li className='list-icon-none'>
-                                            <ul className='custom-font-size text-uppercase'>
-                                                <li className='py-1 list-icon-none' > aoud extraordinaire</li>
-                                                <li className='py-1 list-icon-none' > our latest launches </li>
-                                                <li className='py-1 list-icon-none' > scents for summer </li>
-                                                <li className='py-1 list-icon-none' >best-sellers</li>
-                                                <li className='py-1 list-icon-none' > bundle builder</li>
-                                                <li className='py-1 list-icon-none' >gift sets</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <img className='img-set-width' src={NavbarImage} alt="image" />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li onClick={() => toggleDropdownMenu("flowerPreservation")} className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
-                                <Link className='text-decoration-none cutom-color py-5'>flower preservation</Link>
-                                <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'flowerPreservation' && listIcon ? 'listIconrotated' : ''}`}></i>
-                                <div className={`drop-dwon ${(dropName === 'flowerPreservation') ? 'dropToggleMenu' : ''}`}>
+                            <li onClick={() => toggleDropdownMenu("shop")} className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
+                                <Link to="/shop" className='text-decoration-none cutom-color py-5'>shop</Link>
+                                <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'shop' && listIcon ? 'listIconrotated' : ''}`}></i>
+                                <div className={`drop-dwon ${(dropName === 'shop') ? 'dropToggleMenu' : ''}`}>
 
                                     <ul className=' d-lg-flex d-block justify-content-between'>
-                                        <li className='custom-font-size text-uppercase custom-font-weight list-icon-none' >shop types
-                                            <ul>
-                                                <li className='py-1 list-icon-none' >view all home</li>
-                                                <li className='py-1 list-icon-none' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none' >the city collection</li>
-                                                <li className='py-1 list-icon-none' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none' >candles</li>
-                                                <li className='py-1 list-icon-none' >reed diffusers</li>
+                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >shop types
+                                            <ul className='mt-3'>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
-                                        <li className='custom-font-size text-uppercase custom-font-weight list-icon-none' >product types
-                                            <ul>
-                                                <li className='py-1 list-icon-none' >view all home</li>
-                                                <li className='py-1 list-icon-none' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none' >the city collection</li>
-                                                <li className='py-1 list-icon-none' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none' >candles</li>
-                                                <li className='py-1 list-icon-none' >reed diffusers</li>
+                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >product types
+                                            <ul className='mt-3'>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
-                                        <li className='custom-font-size text-uppercase custom-font-weight list-icon-none' >feature
-                                            <ul>
-                                                <li className='py-1 list-icon-none' >view all home</li>
-                                                <li className='py-1 list-icon-none' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none' >the city collection</li>
-                                                <li className='py-1 list-icon-none' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none' >candles</li>
-                                                <li className='py-1 list-icon-none' >reed diffusers</li>
+                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >feature
+                                            <ul className='mt-3'>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
-                                        <li className='custom-font-size text-uppercase custom-font-weight list-icon-none' >layouts
-                                            <ul>
-                                                <li className='py-1 list-icon-none' >view all home</li>
-                                                <li className='py-1 list-icon-none' >the english garden collection  </li>
-                                                <li className='py-1 list-icon-none' >the city collection</li>
-                                                <li className='py-1 list-icon-none' >the aoud collection</li>
-                                                <li className='py-1 list-icon-none' >candles</li>
-                                                <li className='py-1 list-icon-none' >reed diffusers</li>
+                                        <li className='custom-font-size text-capitalize custom-font-weight list-icon-none fs-4' >layouts
+                                            <ul className='mt-3'>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >view all home</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the english garden collection  </li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the city collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >the aoud collection</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >candles</li>
+                                                <li className='py-1 list-icon-none fs-small custom-color' >reed diffusers</li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
 
-                            <li onClick={() => toggleDropdownMenu("chocolatePreservation")} className='list-item pt-1 cursor-pointer  list-icon-none  item-sm-py  custom-font-size text-capitalize custom-font-weight'>
+
+                            <li className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
+                                <Link className=' cutom-color text-decoration-none py-5'>gifting</Link>
+                            </li>
+
+
+                            <li className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
+                                <Link className='text-decoration-none cutom-color py-5'>flower preservation</Link>
+                            </li>
+
+                            <li className='list-item pt-1 cursor-pointer  list-icon-none  item-sm-py  custom-font-size text-capitalize custom-font-weight'>
                                 <Link className=' cutom-color text-decoration-none py-5'> chocolate preservation</Link>
-                                <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'chocolatePreservation' && listIcon ? 'listIconrotated' : ''}`}></i>
-                                <div className={`drop-dwon ${(dropName === 'chocolatePreservation') ? 'dropToggleMenu' : ''}`}>
-                                    <div className='d-sm-flex d-block justify-content-between box'>
-                                        <div>
-                                            <ul className='custom-font-size text-uppercase'>
-                                                <li className='py-1 list-icon-none' > gift set builder</li>
-                                                <li className='py-1 list-icon-none' > gift sets  </li>
-                                                <li className='py-1 list-icon-none' > gifts for her </li>
-                                                <li className='py-1 list-icon-none' >gifts for him</li>
-                                                <li className='py-1 list-icon-none' >little luxuries</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <img className='img-set-width' src={NavbarImage} alt="image" />
-                                        </div>
-                                    </div>
-                                </div>
                             </li>
                             <li onClick={() => toggleDropdownMenu("pages")} className='list-item pt-1 position-relative cursor-pointer  list-icon-none  item-sm-py  custom-font-size text-capitalize custom-font-weight'>
                                 <Link className=' cutom-color text-decoration-none py-5'>pages</Link>
@@ -214,11 +180,6 @@ const Navbar = () => {
                                     </ul>
                                 </div>
                             </li>
-
-
-
-
-
                         </ul>
 
                     </div>

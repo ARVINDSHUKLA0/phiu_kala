@@ -4,6 +4,17 @@
 .custom-width-set{
    width: 20%;
 }
+.cartview-imges{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+.cartview-imges img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
 @media (min-width: 0px) and (max-width: 520px) {
     .custom-width-set{
         width: 50%;
