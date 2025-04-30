@@ -59,6 +59,8 @@ const ProductBuy = () => {
         ]
     };
 
+    
+
     const KeyFuc = () => setKey(prevState => !prevState);
     const DescriptionFunc = () => SetDescription((prevState) => !prevState);
     const Specificationsfun = () => SetSpecifications((prevState) => !prevState);
@@ -66,10 +68,7 @@ const ProductBuy = () => {
     return (
         <>
             <Navbar />
-            <section className='product-single-item-container'>
-                <div className='product-buy-banner'></div>
-            </section>
-            <section className='container mb-4'>
+            <section className='container my-4 mb-5'>
                 {DataProductBuy ? (
                     <div className="row m-0">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-12 overflow-hidden">
@@ -220,7 +219,8 @@ const ProductBuy = () => {
                     </div>
                 )}
             </section>
-            <Footer/>
+
+            <Footer />
         </>
     )
 }

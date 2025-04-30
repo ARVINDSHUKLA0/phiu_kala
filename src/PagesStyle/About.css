@@ -6,3 +6,24 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.about-conatiner{
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+.about-conatiner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about-profile{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.about-profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

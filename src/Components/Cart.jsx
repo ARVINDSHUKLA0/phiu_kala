@@ -67,7 +67,7 @@ const Cart = () => {
                                         <div className='cart-height-set'>
                                             <img className='img-fluid' src={asideCartValue.thumbnailImage} width={130} alt="" />
                                         </div>
-                                        <div className='ps-lg-4 '>
+                                        <div className='ps-lg-4 mt-2 '>
                                             <p className='pe-3 fw-light'>{asideCartValue.title}</p>
                                             <p> &#x20B9; {asideCartValue.price}</p>
                                             <div className='mb-3'>
@@ -77,7 +77,7 @@ const Cart = () => {
                                             </div>
 
                                         </div>
-                                        <div>
+                                        <div className='mt-2'>
                                             <Link onClick={() => CartItemRemove(asideCartValue.id)}>
                                                 <i className="fa-solid fa-xmark pe-5 text-dark"></i>
                                             </Link>
