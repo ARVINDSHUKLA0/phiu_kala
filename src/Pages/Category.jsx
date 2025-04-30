@@ -68,24 +68,25 @@ const Category = () => {
     return (
         <>
             <div className="py-5 container">
-                <h2 className=' text-center category-section mb-4 text-font-famliy fw-bold'>Shop by Category</h2>
-                <CategorySlider {...mainSliderSettings} >
-                    {imagesArr.map((ValueData, index) => (
-                        <div key={index}>
-                            <Link className='text-decoration-none'>
-                                <div className="d-flex justify-content-between align-items-center ">
-                                    <div>
-                                        <div className='categoryimg-border'>
-                                            <img className=' img-cetgery-padding custom-width-img ' src={ValueData.CetegorySrc} alt="" />
+                <div>
+                    <h2 className=' text-center category-section mb-4 text-font-famliy fw-bold'>Shop by Category</h2>
+                    <CategorySlider {...mainSliderSettings} >
+                        {imagesArr.map((ValueData, index) => (
+                            <div key={index}>
+                                <Link className='text-decoration-none'>
+                                    <div className="d-flex justify-content-center align-items-center ">
+                                        <div>
+                                            <div className='categoryimg-border'>
+                                                <img className=' img-cetgery-padding custom-width-img ' src={ValueData.CetegorySrc} alt="" />
+                                            </div>
+                                            <p className='text-center text-dark mt-4 text-font-famliy fs-3'>{ValueData.toysName}</p>
                                         </div>
-                                        <p className='text-center text-dark mt-4 text-font-famliy fs-3'>{ValueData.toysName}</p>
                                     </div>
-                                </div>
-                            </Link>
-                        </div>
-                    ))}
-                </CategorySlider>
-
+                                </Link>
+                            </div>
+                        ))}
+                    </CategorySlider>
+                </div>
             </div>
         </>
     )

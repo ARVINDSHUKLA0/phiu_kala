@@ -33,7 +33,7 @@
     overflow: hidden; 
     position: relative;    
 } 
-
+ 
 .categoryimg-border::after {
     content: '';
     position: absolute;
