@@ -30,7 +30,7 @@ const Login = () => {
             <div className='text-center'>
               <div>
                 <Link to="/">
-                <img src={Logo} alt="" width={200} />
+                <img src={Logo} alt="" width={70} />
                 </Link>
               </div>
               <h5>Sign up</h5>
