@@ -3,10 +3,10 @@ import '../PagesStyle/Category.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CategorySlider from 'react-slick';
-import CetegoryOne from '/assets/img/one.jpg'
-import CetegoryTwo from '/assets/img/one.jpg'
-import CetegoryThree from '/assets/img/one.jpg'
-import CetegoryFour from '/assets/img/one.jpg'
+import CetegoryOne from '/assets/img/categoryClock.png'
+import CetegoryTwo from '/assets/img/categoryNamePlate.webp'
+import CetegoryThree from '/assets/img/Earrings1.jpg'
+import CetegoryFour from '/assets/img/PhotoFrame2.jpg'
 import { Link } from 'react-router-dom';
 
 const imagesArr = [
@@ -16,11 +16,11 @@ const imagesArr = [
     },
     {
         CetegorySrc: CetegoryTwo,
-        toysName: "earrings",
+        toysName: "name plate",
     },
     {
         CetegorySrc: CetegoryThree,
-        toysName: "name plate",
+        toysName: "earrings",
     },
     {
         CetegorySrc: CetegoryFour,
