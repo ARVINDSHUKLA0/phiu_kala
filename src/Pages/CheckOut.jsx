@@ -145,7 +145,9 @@ const CheckOut = () => {
                                             cartItems.map((item, index) => (
                                                 <div key={index} className='d-md-flex d-block align-items-center justify-content-between mb-5 '>
                                                     <div className='d-flex mb-3'>
-                                                        <img className='img-fluid custom-width' src={item.thumbnailImage} alt="" />
+                                                        <div className='custom-width'>
+                                                        <img className='img-fluid ' src={item.thumbnailImage} alt="" />
+                                                        </div>
                                                         <div className='w-50 ps-3'>
                                                             <p className='m-0 fs-small'>{item.title}</p>
                                                             <p className='m-0 fs-small'>&#x20B9; {item.price}</p>
