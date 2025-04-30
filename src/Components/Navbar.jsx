@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import '../ComponentsStyle/Navbar.css'
-import NavbarImage from '/assets/img/NavbarImage.jpg'
+import '../ComponentsStyle/Navbar.css' 
 import logoImage from '/assets/img/logo.png'
 import AsidebarNavImage from '/assets/img/asidenavbar.jpg'
 import { Link, useNavigate } from 'react-router-dom'
