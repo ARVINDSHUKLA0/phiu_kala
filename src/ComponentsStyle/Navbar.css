@@ -45,7 +45,7 @@
  .drop-dwon {
      position: absolute;
      background-color: white;
-     top: 86px;
+     top: 100px;
      z-index: 99;
      width: 100%;
      height: auto;
@@ -393,9 +393,7 @@
          display: none;
      }
 
-     /* .bars-icon-display {
-         display: block;
-     } */
+   
 
      .icon-size {
          font-size: 23px;

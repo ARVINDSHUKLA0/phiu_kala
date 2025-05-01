@@ -16,7 +16,7 @@ const HeaderSlider = () => {
     pauseOnFocus: false,
   };
 
-  const imgArr = ["slider1.jpg", "slider2.webp", "slider3.jpg"];
+  const imgArr = ["slider1.png", "slider-2.png", "slider-3.png"];
 
   return (
     <section className='slider-header-wrap'>

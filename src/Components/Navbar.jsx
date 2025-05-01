@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import '../ComponentsStyle/Navbar.css' 
+import '../ComponentsStyle/Navbar.css'
 import logoImage from '/assets/img/logo.png'
 import AsidebarNavImage from '/assets/img/asidenavbar.jpg'
 import { Link, useNavigate } from 'react-router-dom'
@@ -56,6 +56,8 @@ const Navbar = () => {
         }
     }
 
+
+
     const handleIconClick = () => {
         setListIcon(!listIcon);
     };
@@ -99,13 +101,13 @@ const Navbar = () => {
                             </li>
 
                             <li onClick={() => toggleDropdownMenu("shop")} className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
-                                <Link to="/shop" className='text-decoration-none cutom-color py-5 flex-grow-1'>shop   </Link>
-                                <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'shop' && listIcon ? 'listIconrotated' : ''}`}></i>
+                                <Link to="/shop" className='text-decoration-none cutom-color py-5'>shop</Link>
+                                <i className={`fa-solid fa-chevron-down mx-3   listIcon ${dropName === 'shop' && listIcon ? 'listIconrotated' : ''}`}></i>
                                 <div className={`drop-dwon ${(dropName === 'shop') ? 'dropToggleMenu' : ''}`}>
 
                                     <ul className=' d-lg-flex d-block justify-content-between'>
                                         <li className=' menu-font-size text-capitalize custom-font-weight list-icon-none'>shop types
-                                            <ul className='mt-lg-3 mt-1' style={{fontFamily : 'monospace'}}>
+                                            <ul className='mt-lg-3 mt-1' style={{ fontFamily: 'monospace' }}>
                                                 <li className='py-1 list-icon-none  custom-font-size custom-color' >view all home</li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
@@ -115,7 +117,7 @@ const Navbar = () => {
                                             </ul>
                                         </li>
                                         <li className='menu-font-size text-capitalize custom-font-weight list-icon-none'>product types
-                                            <ul className='mt-lg-3 mt-1'   style={{fontFamily : 'monospace'}} >
+                                            <ul className='mt-lg-3 mt-1' style={{ fontFamily: 'monospace' }} >
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >view all home</li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
@@ -125,7 +127,7 @@ const Navbar = () => {
                                             </ul>
                                         </li>
                                         <li className='menu-font-size text-capitalize custom-font-weight list-icon-none'>feature
-                                            <ul className='mt-lg-3 mt-1' style={{fontFamily : 'monospace'}}>
+                                            <ul className='mt-lg-3 mt-1' style={{ fontFamily: 'monospace' }}>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >view all home</li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
@@ -135,7 +137,7 @@ const Navbar = () => {
                                             </ul>
                                         </li>
                                         <li className='menu-font-size text-capitalize custom-font-weight list-icon-none' >layouts
-                                            <ul className='mt-lg-3 mt-1' style={{fontFamily : 'monospace'}}>
+                                            <ul className='mt-lg-3 mt-1' style={{ fontFamily: 'monospace' }}>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >view all home</li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the english garden collection  </li>
                                                 <li className='py-1 list-icon-none custom-font-size custom-color' >the city collection</li>
@@ -146,7 +148,7 @@ const Navbar = () => {
                                         </li>
                                     </ul>
                                 </div>
-                              
+
                             </li>
 
 
