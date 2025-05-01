@@ -1,0 +1,7 @@
+.CatFilter{
+    height: 450px;
+    background-image: url("/assets/img/categoryFilterBanner.jpg");
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: cover;
+}

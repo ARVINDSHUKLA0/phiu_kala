@@ -16,18 +16,7 @@ import Category from './Category'
 const Home = () => {
   const { addToCartFunc } = useContext(AddtoCartWarpper)
   const { WislistFunc } = useContext(WisListdata)
-  const [categoryProduct, setCategoryProduct] = useState(false);
-  const [filterPrice, setFilterPrice] = useState(false);
-
-  const categoryShow = () => {
-    setCategoryProduct(!categoryProduct);
-  };
-
-  const filterShow = () => {
-    setFilterPrice(!filterPrice);
-  }
-
-
+ 
   const Cetsettings = {
     autoplay: true,
     dots: false,

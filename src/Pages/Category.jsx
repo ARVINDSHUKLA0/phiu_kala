@@ -3,30 +3,9 @@ import '../PagesStyle/Category.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CategorySlider from 'react-slick';
-import CetegoryOne from '/assets/img/categoryClock.png'
-import CetegoryTwo from '/assets/img/categoryNamePlate.webp'
-import CetegoryThree from '/assets/img/Earrings1.jpg'
-import CetegoryFour from '/assets/img/PhotoFrame2.jpg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import ProductCategory from '../Api/ProductCategory';
 
-const imagesArr = [
-    {
-        CetegorySrc: CetegoryOne,
-        toysName: "clock",
-    },
-    {
-        CetegorySrc: CetegoryTwo,
-        toysName: "name plate",
-    },
-    {
-        CetegorySrc: CetegoryThree,
-        toysName: "earrings",
-    },
-    {
-        CetegorySrc: CetegoryFour,
-        toysName: "Photo frame",
-    }
-];
 
 const mainSliderSettings = {
     autoplay: true,
@@ -52,6 +31,7 @@ const mainSliderSettings = {
                 slidesToShow: 2,
                 slidesToScroll: 1,
             }
+
         },
         {
             breakpoint: 320,
@@ -64,29 +44,39 @@ const mainSliderSettings = {
     ]
 
 };
+
 const Category = () => {
+    const navigate = useNavigate()
+
+    
+  const handleCategoryClick = (name) => {
+    navigate(`/category/${name}`);
+    console.log("hit")
+  };
     return (
         <>
             <div className="py-5 container">
                 <div>
                     <h2 className=' text-center category-section mb-4 text-font-famliy fw-bold'>Shop by Category</h2>
                     <CategorySlider {...mainSliderSettings} >
-                        {imagesArr.map((ValueData, index) => (
+                        {ProductCategory.map((ValueData, index) => (
                             <div key={index}>
-                                <Link className='text-decoration-none'>
+                                <Link to={`/filtercategory/${ValueData.categoryName}`} className='text-decoration-none'>
                                     <div className="d-flex justify-content-center align-items-center ">
-                                        <div>
+                                        <div onClick={()=>handleCategoryClick(ValueData.name)}>
                                             <div className='categoryimg-border'>
                                                 <img className=' img-cetgery-padding custom-width-img ' src={ValueData.CetegorySrc} alt="" />
                                             </div>
-                                            <p className='text-center text-dark mt-4 text-font-famliy fs-3 text-capitalize'>{ValueData.toysName}</p>
+                                            <p className='text-center text-dark mt-4 text-font-famliy fs-3 text-capitalize'>{ValueData.categoryName}</p>
                                         </div>
                                     </div>
                                 </Link>
                             </div>
                         ))}
                     </CategorySlider>
+                  
                 </div>
+               
             </div>
         </>
     )
