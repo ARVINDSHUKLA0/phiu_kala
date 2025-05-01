@@ -63,7 +63,7 @@ const Shop = () => {
                         <div className="col-lg-3 col-md-3 col-sm-12 col-12 bg-light rounded-3 ps-3">
                             <div className="postion-sticky-cetegry py-lg-4">
                                 <div className="border-bottom pb-3 mb-3">
-                                    <h4 style={{ fontFamily: 'cursive' }} className="mb-3">Gender</h4>
+                                    <h2  className="mb-3 text-font-famliy text-capitalize">Gender</h2>
                                     <div className="d-flex align-items-center mb-1">
                                         <input
                                             type="radio"
@@ -105,7 +105,7 @@ const Shop = () => {
                                 </div>
 
                                 <div className="border-bottom pb-3 mb-3">
-                                    <h4 className="mb-3" style={{ fontFamily: 'cursive' }}>Sort By</h4>
+                                    <h2 className="mb-3 text-font-famliy text-capitalize">Sort By</h2>
                                     <div className="d-flex align-items-center mb-1">
                                         <input
                                             type="radio"
