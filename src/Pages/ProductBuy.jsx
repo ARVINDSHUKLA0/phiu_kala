@@ -107,9 +107,9 @@ const ProductBuy = () => {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className='mx-lg-0 mx-3'>
                                 <hr />
-                                <div className='d-flex ps-2'>
+                                <div className='d-flex'>
                                     <span><i className="fa-solid fa-truck"></i></span>
                                     <p className='ps-3 m-0'>Free Shipping & Returns</p>
                                 </div>
