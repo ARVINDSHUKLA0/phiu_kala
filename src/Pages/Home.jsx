@@ -70,7 +70,7 @@ const Home = () => {
           <div className='px-2'>
             <div className="row text-center">
               {
-                Product.map((itemValue, index) => (
+                Product.slice(0, 20).map((itemValue, index) => (
                   <div className='col-lg-3 col-md-4 col-sm-6 col-6 product-item position-relative text-center overflow-hidden cursor-pointer ' key={index}>
                     <div className='bg-light mb-3 mx-2 rounded-5'>
                       <div className=" position-relative overflow-hidden ">

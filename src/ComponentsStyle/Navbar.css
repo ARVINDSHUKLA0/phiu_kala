@@ -255,6 +255,14 @@
        color: white !important;
      }
 
+     .list-item:hover .drop-dwon-min {
+        display: flex;
+    }
+    .list-item:hover .drop-dwon {
+        display: flex;
+    }
+    
+    
  }
 
  @media (min-width: 526px) and (max-width: 768px) {

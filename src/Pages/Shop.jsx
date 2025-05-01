@@ -119,6 +119,18 @@ const Shop = () => {
                                         Photo frame
                                         </label>
                                     </div>
+                                    <div className="d-flex align-items-center mb-1">
+                                        <input
+                                            type="radio"
+                                            name="categoryName"
+                                            id="Flower Preservation"
+                                            value="Flower Preservation"
+                                            onChange={(e) => setCategoryName(e.target.value)}
+                                        />
+                                        <label htmlFor="Photo Frame" className="ps-2 fs-6 text-capitalize">
+                                        Flower Preservation
+                                        </label>
+                                    </div>
                                 </div>
 
                                 <div className="border-bottom pb-3 mb-3">

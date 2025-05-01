@@ -73,6 +73,15 @@ const Navbar = () => {
     const CarthandelFunc = () => {
         setShowCart(true)
     }
+    
+    document.querySelectorAll('.list-item .menu-toggle-btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const dropdown = this.closest('.list-item').querySelector('.drop-dwon');
+            dropdown.classList.toggle('dropToggleMenu');
+        });
+    });
+    
 
 
 
@@ -95,7 +104,6 @@ const Navbar = () => {
                             </Link>
                         </p>
                         <ul className={`list-display-menu gap-4 m-0 ${menuActive ? 'active' : ''}`}>
-
                             <li className='list-item cursor-pointer list-icon-none pt-1 item-sm-py  custom-font-size  text-capitalize custom-font-weight'>
                                 <Link to="/" className='cutom-color text-decoration-none py-4'>home</Link>
                             </li>
@@ -155,15 +163,10 @@ const Navbar = () => {
                             <li className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
                                 <Link className=' cutom-color text-decoration-none py-5'>gifting</Link>
                             </li>
-
-
                             <li className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
-                                <Link className='text-decoration-none cutom-color py-5'>flower preservation</Link>
+                                <Link to="/contact" className=' cutom-color text-decoration-none py-5'>Contact</Link>
                             </li>
 
-                            <li className='list-item pt-1 cursor-pointer  list-icon-none  item-sm-py  custom-font-size text-capitalize custom-font-weight'>
-                                <Link className=' cutom-color text-decoration-none py-5'> chocolate preservation</Link>
-                            </li>
                             <li onClick={() => toggleDropdownMenu("pages")} className='list-item pt-1 position-relative cursor-pointer  list-icon-none  item-sm-py  custom-font-size text-capitalize custom-font-weight'>
                                 <Link className=' cutom-color text-decoration-none py-5'>pages</Link>
                                 <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'pages' && listIcon ? 'listIconrotated' : ''}`}></i>

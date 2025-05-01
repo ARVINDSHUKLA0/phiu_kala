@@ -24,7 +24,7 @@ import Cancellations from './Pages/Cancellations';
 import Shop from './Pages/Shop';
   
 import "@fontsource/caveat";  
-import FilterCategory from './Pages/FilterCategory';
+import FilterCategory from './Pages/FilterCategory'; 
 
 
 function App() {
@@ -67,7 +67,7 @@ function App() {
               <Route path='/about' element={<About/>}/>
               <Route path='/privacypolicy' element={<Privacypolicy/>}/>
               <Route path='/termconditions' element={<TermsConditions/>}/>
-              <Route path='/cancellations' element={<Cancellations/>}/>
+              <Route path='/cancellations' element={<Cancellations/>}/> 
             </Routes>
           </BrowserRouter>
         </CartProvider>
