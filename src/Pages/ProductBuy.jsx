@@ -109,7 +109,7 @@ const ProductBuy = () => {
 
                             <div>
                                 <hr />
-                                <div className='d-flex '>
+                                <div className='d-flex ps-2'>
                                     <span><i className="fa-solid fa-truck"></i></span>
                                     <p className='ps-3 m-0'>Free Shipping & Returns</p>
                                 </div>
