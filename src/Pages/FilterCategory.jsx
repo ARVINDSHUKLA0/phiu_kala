@@ -40,7 +40,7 @@ const FilterCategory = () => {
             <section className="CatFilter text-center my-4"></section>
 
             <section className="my-5 container">
-                <p className='fs-1 text-font-famliy'>{categoryName}</p>
+                <p className='fs-1 text-font-famliy ps-2'>{categoryName}</p>
                 <div className="row">
                     {currentProducts.length > 0 ? (
                         currentProducts.map((prod, index) => (
