@@ -99,7 +99,7 @@ const Navbar = () => {
                             </li>
 
                             <li onClick={() => toggleDropdownMenu("shop")} className='list-item pt-1 cursor-pointer list-icon-none item-sm-py  custom-font-size text-capitalize custom-font-weight '>
-                                <Link to="/shop" className='text-decoration-none cutom-color py-5'>shop</Link>
+                                <Link to="/shop" className='text-decoration-none cutom-color py-5 flex-grow-1'>shop   </Link>
                                 <i className={`fa-solid fa-chevron-down mx-3 icon-list listIcon ${dropName === 'shop' && listIcon ? 'listIconrotated' : ''}`}></i>
                                 <div className={`drop-dwon ${(dropName === 'shop') ? 'dropToggleMenu' : ''}`}>
 
@@ -146,6 +146,7 @@ const Navbar = () => {
                                         </li>
                                     </ul>
                                 </div>
+                              
                             </li>
 
 

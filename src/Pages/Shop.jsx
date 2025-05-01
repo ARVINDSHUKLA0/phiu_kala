@@ -13,35 +13,28 @@ import { WisListdata } from '../Context/WislistContext';
 const Shop = () => {
     const { addToCartFunc } = useContext(AddtoCartWarpper)
     const { WislistFunc } = useContext(WisListdata)
-    const [gender, setGender] = useState('');
+    const [categoryName, setCategoryName] = useState('');
     const [sortBy, setSortBy] = useState('');
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 16;
-    
-
+ 
     useEffect(() => {
         const sorted = Product
-            .filter(item => (gender ? item.gender === gender : true))
+            .filter(item => (categoryName ? item.categoryName === categoryName : true))
             .sort((a, b) => {
-                if (sortBy === 'lowToHigh') {
-                    return a.price - b.price;
-                } else if (sortBy === 'highToLow') {
-                    return b.price - a.price;
-                } else if (sortBy === 'newestFirst') {
-                    return new Date(b.createdAt) - new Date(a.createdAt);
-                } else if (sortBy === 'oldestFirst') {
-                    return new Date(a.createdAt) - new Date(b.createdAt);
-                } else if (sortBy === 'popularity') {
-                    return b.popularity - a.popularity;
-                } else {
-                    return 0;
-                }
+                if (sortBy === 'lowToHigh') return a.price - b.price;
+                if (sortBy === 'highToLow') return b.price - a.price;
+                if (sortBy === 'newestFirst') return new Date(b.createdAt) - new Date(a.createdAt);
+                if (sortBy === 'oldestFirst') return new Date(a.createdAt) - new Date(b.createdAt);
+                if (sortBy === 'popularity') return b.popularity - a.popularity;
+                return 0;
             });
-
+    
         setFilteredProducts(sorted);
-    }, [gender, sortBy]);
- 
+        setCurrentPage(1); // Reset page to 1 on change
+    }, [categoryName, sortBy]);
+    
     const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
  
     const currentProducts = filteredProducts.slice(
@@ -63,14 +56,14 @@ const Shop = () => {
                         <div className="col-lg-3 col-md-3 col-sm-12 col-12 bg-light rounded-3 ps-3">
                             <div className="postion-sticky-cetegry py-lg-4">
                                 <div className="border-bottom pb-3 mb-3">
-                                    <h2  className="mb-3 text-font-famliy text-capitalize">Gender</h2>
+                                    <h2  className="mb-3 text-font-famliy text-capitalize ">category</h2>
                                     <div className="d-flex align-items-center mb-1">
                                         <input
                                             type="radio"
-                                            name="gender"
-                                            id="allGender"
+                                            name="categoryName"
+                                            id="all"
                                             value=""
-                                            onChange={(e) => setGender(e.target.value)}
+                                            onChange={(e) => setCategoryName(e.target.value)}
                                         />
                                         <label htmlFor="allGender" className="ps-2 fs-6">
                                             All
@@ -80,26 +73,50 @@ const Shop = () => {
                                     <div className="d-flex align-items-center mb-1">
                                         <input
                                             type="radio"
-                                            name="gender"
-                                            id="male"
-                                            value="male"
-                                            onChange={(e) => setGender(e.target.value)}
+                                            name="categoryName"
+                                            id="clock"
+                                            value="clock"
+                                            onChange={(e) => setCategoryName(e.target.value)}
                                         />
-                                        <label htmlFor="male" className="ps-2 fs-6">
-                                            Male
+                                        <label  htmlFor="male" className="ps-2 fs-6 text-capitalize">
+                                            clock
                                         </label>
                                     </div>
 
                                     <div className="d-flex align-items-center mb-1">
                                         <input
                                             type="radio"
-                                            name="gender"
-                                            id="female"
-                                            value="female"
-                                            onChange={(e) => setGender(e.target.value)}
+                                            name="categoryName"
+                                            id="name plate"
+                                            value="name plate"
+                                            onChange={(e) => setCategoryName(e.target.value)}
                                         />
-                                        <label htmlFor="female" className="ps-2 fs-6">
-                                            Female
+                                        <label htmlFor="earrings" className="ps-2 fs-6 text-capitalize">
+                                         name plate
+                                        </label>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-1">
+                                        <input
+                                            type="radio"
+                                            name="categoryName"
+                                            id="Earrings"
+                                            value="Earrings"
+                                            onChange={(e) => setCategoryName(e.target.value)}
+                                        />
+                                        <label htmlFor="earrings" className="ps-2 fs-6 text-capitalize">
+                                        earrings
+                                        </label>
+                                    </div>
+                                    <div className="d-flex align-items-center mb-1">
+                                        <input
+                                            type="radio"
+                                            name="categoryName"
+                                            id="Photo Frame"
+                                            value="Photo Frame"
+                                            onChange={(e) => setCategoryName(e.target.value)}
+                                        />
+                                        <label htmlFor="Photo Frame" className="ps-2 fs-6 text-capitalize">
+                                        Photo frame
                                         </label>
                                     </div>
                                 </div>
